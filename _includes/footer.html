@@ -1,37 +1,23 @@
 <footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
   <div class="wrapper">
+    <br><br><br>
 
     <div class="footer-col-wrapper">
       <div class="footer-col">
-        <p class="feed-subscribe">
-          <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
-            <svg class="svg-icon orange">
-              <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-            </svg><span>Subscribe</span>
-          </a>
-        </p>
-      {%- if site.author %}
-        <ul class="contact-list">
-          {% if site.author.name -%}
-            <li class="p-name">{{ site.author.name | escape }}</li>
-          {% endif -%}
-          {% if site.author.email -%}
-            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-          {%- endif %}
+        <br>
+        <div style="text-align: center"><img src="./assets/files/ProfilePicture.jpg" width="150" /></div>
         </ul>
-      {%- endif %}
       </div>
       <div class="footer-col">
+        <br>
         <p>{{ site.description | escape }}</p>
+        <p>Thank you for visiting my website. If you want to connect, you can contact me <a href="{{ post_url }}/contact" style="display: inline;">here.</a></p>
       </div>
     </div>
 
     <div class="social-links">
       {%- include social.html -%}
     </div>
-
   </div>
 
 </footer>

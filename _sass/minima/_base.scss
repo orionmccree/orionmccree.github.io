@@ -1,5 +1,6 @@
 html {
   font-size: $base-font-size;
+  scroll-behavior: smooth;
 }
 
 /**
@@ -10,7 +11,6 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
-
 }
 
 
@@ -20,8 +20,11 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $text-color;
-  background-color: $background-color;
+  color: #002C54;
+  div{
+    background-color: #A1D6E2;
+  }
+  background-image: linear-gradient(#F1F1F2, #1995AD, #090042);
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -104,6 +107,7 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
+  color: #002C54;
 }
 
 
@@ -112,16 +116,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $link-base-color;
+  color: #0059ac;
   text-decoration: none;
 
   &:visited {
-    color: $link-visited-color;
-  }
-
-  &:hover {
-    color: $link-hover-color;
-    text-decoration: underline;
+    color: #001528(227, 178, 54);
   }
 
   .social-media-list &:hover {
@@ -167,6 +166,14 @@ code {
   background-color: $code-background-color;
 }
 
+.header {
+  font-family: $code-font-family;
+  font-size: 12;
+  border: 1px solid $border-color-01;
+  border-radius: 3px;
+  background-color: $code-background-color;
+}
+
 code {
   padding: 1px 5px;
 }
@@ -192,17 +199,17 @@ pre {
   }
 }
 
+.simple-linear {
+  background-color: linear-gradient(blue, pink);
+}
 
 
 /**
  * Wrapper
  */
 .wrapper {
-  max-width: calc(#{$content-width} - (#{$spacing-unit}));
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit * .5;
-  padding-left: $spacing-unit * .5;
   @extend %clearfix;
 
   @media screen and (min-width: $on-large) {
@@ -243,7 +250,6 @@ pre {
   display: inline-block;
   fill: currentColor;
   vertical-align: text-bottom;
-  overflow: visible;
 }
 
 
@@ -279,4 +285,14 @@ table {
     -webkit-overflow-scrolling: touch;
             -ms-overflow-style: -ms-autohiding-scrollbar;
   }
+}
+
+/**
+* Paragraphs
+*/
+
+p {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
 }

@@ -2,6 +2,24 @@
 layout: base
 ---
 
+<h1 class="post-title p-name"><span class="blue"> <div style="text-align:center"> Orion McCree</div></span></h1>
+
+<div style="text-align: center"><img src="./assets/files/HomePic.jpg" width="300" /></div>
+
+<p>
+  I'm a video editor and have additional skills surrounding computer usage and business finance and management. My video and photo editing skills are in Adobe Creative Suite (Photoshop, Premier Pro, After Effects, etc.), DaVinci Resolve editing software, and Final Cut editing software. I have a degree in Business Administration and Management from Loyola Maryland, and have extensive knowledge in financial and structural business practices. Let's connect!
+</p>
+<p>
+  Lorem ipsum odor amet, consectetuer adipiscing elit. Consectetur lobortis taciti malesuada ullamcorper nascetur dapibus libero dui vitae! Penatibus posuere convallis taciti class molestie mi eget. Eu inceptos hendrerit per tellus posuere id amet curabitur. Porttitor himenaeos velit mi dignissim ornare condimentum nostra. Accumsan ligula euismod nec montes non purus egestas. Egestas dictum amet nulla nibh elit cubilia curabitur.
+</p>
+<p>
+  Adipiscing sagittis non tristique nunc ex maecenas libero. Lobortis taciti suscipit platea ad hendrerit. Nulla dui nunc duis efficitur himenaeos. Pellentesque tincidunt dignissim natoque porttitor pharetra vivamus potenti nec. Eget tortor hac mus amet nec. Lacus nec urna taciti ultricies taciti. Hac laoreet nunc odio in cubilia phasellus vivamus.
+  </p>
+<br>
+<p>
+  Click on the menu above to learn more about me.
+</p>
+
 <div class="home">
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
@@ -16,46 +34,8 @@ layout: base
     {% assign posts = site.posts %}
   {% endif %}
 
+</div>
 
-  {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-    <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
-        {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
-      </div>
-    {%- endif %}
-
-  {%- endif -%}
-
+<div style="position: relative; bottom: 0; text-align: center; align-items: center; margin-top: 10vh;">
+  <a href="./assets/files/McConnellAResume.pdf" download="McConnellAResume" ><button class="btn-70">Download my Resume</button></a>
 </div>

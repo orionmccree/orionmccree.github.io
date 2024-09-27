@@ -4,12 +4,8 @@ layout: base
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {{ page.date | date: date_format }}
-      </time>
       {%- if page.modified_date -%}
         ~ 
         {%- assign mdate = page.modified_date | date_to_xmlschema -%}
@@ -28,6 +24,10 @@ layout: base
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
+    <div style="position: relative; bottom: 0; text-align: center; align-items: center; margin-top: 10vh;">
+      <a href="{{ "/" | relative_url }}"><button class="btn-70">Return Home</button></a>
+      <a href="./assets/files/McConnellAResume.pdf" download="McConnellAResume" ><button class="btn-70">Download my Resume</button></a>
+    </div>
   </div>
 
   {%- if site.disqus.shortname -%}

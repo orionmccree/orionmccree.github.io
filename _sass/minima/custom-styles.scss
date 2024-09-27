@@ -1,2 +1,217 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+.left {
+    text-align: left;
+  }
+  
+  .right {
+    text-align: right;
+  }
+  
+  .center {
+    text-align: center;
+  }
+
+
+  /**
+ * Icons
+ */
+
+.blue {
+    color: blue;
+  }
+  
+  .red {
+    color: red;
+  }
+
+  .white {
+    color: white;
+  }
+
+  .gold {
+    color: gold;
+  }
+
+  .btn-70,
+.btn-70 *,
+.btn-70 :after,
+.btn-70 :before,
+.btn-70:after,
+.btn-70:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-70 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #fea631;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff); 
+  flex: 1;
+}
+.btn-70:disabled {
+  cursor: default;
+}
+.btn-70:-moz-focusring {
+  outline: auto;
+}
+.btn-70 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-70 [hidden] {
+  display: none;
+}
+.btn-70 {
+  box-shadow: inset 0 0 0 2px #fff;
+  box-sizing: border-box;
+  display: table-cell;
+  font-weight: 900;
+  padding: 0.5rem 1.5rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: color 0.1s linear;
+  vertical-align: middle;
+  text-align: center;
+}
+.btn-70:after,
+.btn-70:before {
+  content: "";
+  position: absolute;
+}
+.btn-70:before {
+  border-bottom: var(--border);
+  border-top: var(--border);
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.btn-70:hover:before {
+  --border: 4px solid #000;
+  -webkit-animation: border-top-and-bottom 1s forwards;
+  animation: border-top-and-bottom 1s forwards;
+}
+.btn-70:after {
+  border-left: var(--border);
+  border-right: var(--border);
+  bottom: 50%;
+  right: 0;
+  transform: translateY(50%);
+  width: 100%;
+  z-index: -1;
+}
+.btn-70:hover:after {
+  --border: 4px solid #000;
+  -webkit-animation: border-right-and-left 1s forwards;
+  animation: border-right-and-left 1s forwards;
+}
+.btn-70:hover {
+  background-color: #fc9917;
+  color: #0059ac !important;
+  text-decoration: none !important;
+}
+@-webkit-keyframes border-top-and-bottom {
+  0% {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes border-top-and-bottom {
+  0% {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@-webkit-keyframes border-right-and-left {
+  0% {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+@keyframes border-right-and-left {
+  0% {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+/* Scroll button styling */
+
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#scrollBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.arrow-button {
+  position: relative;
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size */
+  background-color: #007BFF; /* Button background color */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  display: flex;
+  outline: none; /* Remove outline on focus */
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-button::after {
+  content: '\21E7';
+  font-size: 30px;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  0.75% { transform: translateX(-5px); }
+  1.5% { transform: translateX(5px); }
+  2.25% { transform: translateX(-5px); }
+  3% { transform: translateX(0); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 20s ease-in-out infinite;
+}
+
+/* Menu styling */
+
+.menu-section {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
