@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 html {
   font-size: $base-font-size;
   scroll-behavior: smooth;
@@ -20,11 +22,10 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: #002C54;
   div{
-    background-color: #A1D6E2;
+    font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
   }
-  background-image: linear-gradient(#F1F1F2, #1995AD, #090042);
+  background: hsla(158, 23%, 18%, 1);
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -37,6 +38,17 @@ body {
   overflow-wrap: break-word;
 }
 
+text-body {
+  display: inline-block;
+  flex-wrap: wrap;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  margin-bottom: 2vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 /**
@@ -47,6 +59,11 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit * .5;
+}
+
+h1 {
+  color: hsl(159, 42%, 88%);
+  font-size: 6rem !important;
 }
 
 hr {
@@ -69,6 +86,9 @@ main {
 img {
   max-width: 100%;
   vertical-align: middle;
+  border-radius: 50%;
+  border: 1px solid black;
+  object-fit: cover;
 }
 
 
@@ -100,6 +120,10 @@ li {
   }
 }
 
+li::marker {
+  color: white;
+}
+
 
 
 /**
@@ -107,7 +131,7 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
-  color: #002C54;
+  color: white;
 }
 
 
@@ -116,11 +140,10 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #0059ac;
   text-decoration: none;
-
+  color: mediumspringgreen;
   &:visited {
-    color: #001528(227, 178, 54);
+    color: green;
   }
 
   .social-media-list &:hover {
@@ -208,15 +231,7 @@ pre {
  * Wrapper
  */
 .wrapper {
-  margin-right: auto;
-  margin-left: auto;
   @extend %clearfix;
-
-  @media screen and (min-width: $on-large) {
-    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-  }
 }
 
 
@@ -292,7 +307,9 @@ table {
 */
 
 p {
-  display: inline-block;
+  color: hsla(159, 42%, 88%, 1);
+  font-size: 20px;
+  display: inline;
   justify-content: center;
   align-items: center;
 }
