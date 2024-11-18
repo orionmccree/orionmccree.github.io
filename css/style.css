@@ -11126,6 +11126,29 @@ footer {
   margin-bottom: 5%;
 }
 
+@media (max-width: 991px) {
+  .contact-info {
+    font-size: 1.2rem !important;
+    font-weight: 800;
+    margin-bottom: 5%;
+  }
+
+  #contact-section {
+    padding-left: 0;
+    padding-bottom: 5vh !important;
+    margin-bottom: 5%;
+  }
+
+  .row > * {
+    padding: 0;
+    width: 80vw;
+  }
+
+  .row {
+    padding-bottom: 0%;
+  }
+}
+
 #portfolio {
   margin-top: 5%;
 }
