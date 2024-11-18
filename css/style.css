@@ -11139,7 +11139,9 @@ footer {
 
   .row > * {
     padding: 0;
-    width: 80vw;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .row {
@@ -11179,4 +11181,16 @@ footer {
 li {
   font-size: 1.3rem;
   padding-top: 0.5%;
+}
+
+@media (max-width: 991px) {
+  #about-section {
+    padding-left: 0.5rem !important;
+  }
+  .ms-auto {
+    margin-left: 0 !important;
+  }
+  .me-auto {
+    margin-left: 0 !important;
+  }
 }
