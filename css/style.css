@@ -11147,6 +11147,10 @@ footer {
   .row {
     padding-bottom: 0%;
   }
+
+  #mainNav {
+    margin-bottom: 20%;
+  }
 }
 
 #portfolio {
