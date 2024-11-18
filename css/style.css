@@ -11011,10 +11011,16 @@ html {
 .masthead .masthead-subheading {
   font-size: 1.25rem;
 }
-.masthead .masthead-avatar {
+.masthead-avatar {
   width: 15vw;
   border-radius: 50%;
   border: 2px solid black;
+}
+
+@media (max-width: 991px) {
+  .masthead-avatar {
+    width: 40vw;
+  }
 }
 
 @media (min-width: 992px) {
