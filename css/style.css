@@ -11135,8 +11135,7 @@ footer {
 
   #contact-section {
     padding-left: 0;
-    padding-bottom: 5vh !important;
-    margin-bottom: 5%;
+    height: 37vh;
   }
 
   .row > * {
@@ -11149,7 +11148,7 @@ footer {
   }
 
   #mainNav {
-    margin-bottom: 20%;
+    margin-bottom: 0%;
   }
 }
 
